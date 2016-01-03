@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--Local Tech Meetups Table View Controller-->
+        <!--Meetups Table View Controller-->
         <scene sceneID="abe-XA-J8A">
             <objects>
-                <tableViewController id="ju1-hU-g9b" customClass="LocalTechMeetupsTableViewController" customModule="MeetupCodeAssignment" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="ju1-hU-g9b" customClass="MeetupsTableViewController" customModule="MeetupCodeAssignment" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="I7F-7a-X9g">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

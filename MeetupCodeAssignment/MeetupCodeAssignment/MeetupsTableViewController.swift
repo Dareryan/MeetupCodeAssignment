@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LocalTechMeetupsTableViewController: UITableViewController {
+class MeetupsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
