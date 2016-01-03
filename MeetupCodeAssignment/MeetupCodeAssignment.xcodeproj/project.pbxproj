@@ -13,6 +13,7 @@
 		45DA547D1C39CA4C000C5998 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45DA547B1C39CA4C000C5998 /* LaunchScreen.storyboard */; };
 		45DA54851C39CB3A000C5998 /* LocalTechMeetupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DA54841C39CB3A000C5998 /* LocalTechMeetupsTableViewController.swift */; };
 		45DA54871C39CC25000C5998 /* UserLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DA54861C39CC25000C5998 /* UserLocationManager.swift */; };
+		45DA548B1C39CE4C000C5998 /* MeetupAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DA548A1C39CE4C000C5998 /* MeetupAPIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		45DA547E1C39CA4C000C5998 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45DA54841C39CB3A000C5998 /* LocalTechMeetupsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalTechMeetupsTableViewController.swift; sourceTree = "<group>"; };
 		45DA54861C39CC25000C5998 /* UserLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLocationManager.swift; sourceTree = "<group>"; };
+		45DA548A1C39CE4C000C5998 /* MeetupAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetupAPIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				45DA54791C39CA4C000C5998 /* Assets.xcassets */,
 				45DA547B1C39CA4C000C5998 /* LaunchScreen.storyboard */,
 				45DA547E1C39CA4C000C5998 /* Info.plist */,
+				45DA548A1C39CE4C000C5998 /* MeetupAPIClient.swift */,
 			);
 			path = MeetupCodeAssignment;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45DA54731C39CA4C000C5998 /* AppDelegate.swift in Sources */,
+				45DA548B1C39CE4C000C5998 /* MeetupAPIClient.swift in Sources */,
 				45DA54851C39CB3A000C5998 /* LocalTechMeetupsTableViewController.swift in Sources */,
 				45DA54871C39CC25000C5998 /* UserLocationManager.swift in Sources */,
 			);
@@ -288,6 +292,7 @@
 				45DA54831C39CA4C000C5998 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
