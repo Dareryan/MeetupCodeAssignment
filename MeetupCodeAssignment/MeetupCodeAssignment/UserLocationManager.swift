@@ -17,10 +17,14 @@ class UserLocationManager: NSObject, CLLocationManagerDelegate {
     private let locationManager = CLLocationManager()
     var delegate:UserLocationManagerDelegate?
     
+    // MARK: - Init
+    
     override init() {
         super.init()
         setupLocationManager()
     }
+    
+    // MARK: - Setup
     
     func setupLocationManager() {
         locationManager.requestWhenInUseAuthorization()
@@ -31,6 +35,8 @@ class UserLocationManager: NSObject, CLLocationManagerDelegate {
         }
     }
     
+    // MARK: - Location Manager Delegate
+    
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         manager.stopUpdatingLocation()
         
@@ -38,6 +44,8 @@ class UserLocationManager: NSObject, CLLocationManagerDelegate {
             delegate?.locationManagerDidUpdateLocation(self, location: currentLocation)
         }
     }
+    
+    // MARK: - Imperatives
     
     func updateCurrentUserLocation() {
         locationManager.startUpdatingLocation()
