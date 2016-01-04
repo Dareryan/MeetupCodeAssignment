@@ -35,7 +35,7 @@ class UserLocationManager: NSObject, CLLocationManagerDelegate {
         }
     }
     
-    // MARK: - Location Manager Delegate
+    // MARK: - Location manager delegate
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         manager.stopUpdatingLocation()

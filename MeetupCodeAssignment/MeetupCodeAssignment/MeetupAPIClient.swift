@@ -41,7 +41,7 @@ class MeetupAPIClient: NSObject {
                 return
             }
             
-            do {
+            do{
                 let responseDictionary = try NSJSONSerialization.JSONObjectWithData(data!, options:.MutableContainers)
                 let responseArray = responseDictionary["results"] as? NSArray
                 completion(responseArray)

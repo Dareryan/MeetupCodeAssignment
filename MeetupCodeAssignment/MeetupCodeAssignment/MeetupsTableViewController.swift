@@ -12,11 +12,15 @@ class MeetupsTableViewController: UITableViewController, MeetupsDataSourceDelega
     
     let meetupsDataSource = MeetupsDataSource()
     
+    // MARK: - View lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupDataSource()
         setupTableView()
     }
+    
+    // MARK: - Setup
     
     func setupDataSource() {
         meetupsDataSource.delegate = self
@@ -29,6 +33,8 @@ class MeetupsTableViewController: UITableViewController, MeetupsDataSourceDelega
         tableView.registerNib(UINib(nibName: "MeetupTableViewCell", bundle: nil), forCellReuseIdentifier: MeetupTableViewCell.reuseIdentifier())
     }
     
+    // MARK: - Meetups data source
+    
     func meetupsDataSourceDidLoad(sender: MeetupsDataSource) {
         dispatch_async(dispatch_get_main_queue()) { () -> Void in
             self.tableView.reloadData()
@@ -38,12 +44,10 @@ class MeetupsTableViewController: UITableViewController, MeetupsDataSourceDelega
     // MARK: - Table view data source
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return meetupsDataSource.numberOfSectionsInTable()
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return meetupsDataSource.numberOfRowsInSection(section)
     }
     
@@ -54,7 +58,6 @@ class MeetupsTableViewController: UITableViewController, MeetupsDataSourceDelega
     // MARK: - Table view delegate
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
         let cell = tableView.dequeueReusableCellWithIdentifier(MeetupTableViewCell.reuseIdentifier()) as! MeetupTableViewCell
         cell.configureWithMeetup(meetupsDataSource.meetupForIndexPath(indexPath))
         return cell

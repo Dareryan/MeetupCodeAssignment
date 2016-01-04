@@ -90,7 +90,7 @@ class MeetupsDataSource: NSObject, UserLocationManagerDelegate {
     }
 
     
-    // MARK: - Location Manager Delegate
+    // MARK: - Location manager delegate
     
     func locationManagerDidUpdateLocation(sender: UserLocationManager, location: CLLocation) {
         updateMeetups(location)
